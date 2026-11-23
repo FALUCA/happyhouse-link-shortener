@@ -8,12 +8,14 @@
 # Padronizacao dos finais de linha
 * text=auto
 
-# Configuracoes Apache
-*.htaccess text eol=lf linguist-language=ApacheConf
-.htaccess text eol=lf linguist-language=ApacheConf
+# Linguagem principal: ApacheConf
+go/.htaccess linguist-language=ApacheConf
+**/.htaccess linguist-language=ApacheConf
 
-# Arquivos Python utilizados exclusivamente para testes
-tests/*.py text eol=lf linguist-detectable=false
+# Excluir arquivos Python das estatisticas de linguagem
+tests/** linguist-vendored
+*.py linguist-vendored
 
-# Documentacao
-*.md text eol=lf
+# Excluir documentacao das estatisticas
+docs/** linguist-documentation
+*.md linguist-documentation
