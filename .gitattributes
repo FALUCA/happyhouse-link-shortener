@@ -1,0 +1,25 @@
+# HappyTech Link Shortener - Git attributes
+# Autor: Fabio Castilhos <fabcastilhos@gmail.com>
+# Padronizar finais de linha no repositorio
+* text=auto
+
+# Arquivos de configuracao e documentacao usam LF
+.htaccess text eol=lf
+**/.htaccess text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+VERSION text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Arquivos binarios nao devem ser normalizados
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
