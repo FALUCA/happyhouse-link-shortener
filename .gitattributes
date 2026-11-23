@@ -1,25 +1,19 @@
-# HappyTech Link Shortener - Git attributes
+# ============================================================================
+# Projeto: HappyHouse Link Shortener
+# Arquivo: .gitattributes
 # Autor: Fabio Castilhos <fabcastilhos@gmail.com>
-# Padronizar finais de linha no repositorio
+# Organizacao: HappyHouse
+# ============================================================================
+
+# Padronizacao dos finais de linha
 * text=auto
 
-# Arquivos de configuracao e documentacao usam LF
-.htaccess text eol=lf
-**/.htaccess text eol=lf
-*.md text eol=lf
-*.yml text eol=lf
-*.yaml text eol=lf
-*.py text eol=lf
-VERSION text eol=lf
-.gitignore text eol=lf
-.gitattributes text eol=lf
+# Configuracoes Apache
+*.htaccess text eol=lf linguist-language=ApacheConf
+.htaccess text eol=lf linguist-language=ApacheConf
 
-# Arquivos binarios nao devem ser normalizados
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.webp binary
-*.ico binary
-*.pdf binary
-*.zip binary
+# Arquivos Python utilizados exclusivamente para testes
+tests/*.py text eol=lf linguist-detectable=false
+
+# Documentacao
+*.md text eol=lf
