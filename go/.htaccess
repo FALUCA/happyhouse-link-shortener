@@ -1,1 +1,22 @@
+# ============================================================================
+# Projeto: HappyTech Link Shortener
+# Arquivo: /go/.htaccess
+# Descricao: Redirecionamentos de URLs curtas para campanhas HappyHouse.
+# Autor: Fabio Castilhos <fabcastilhos@gmail.com>
+# Organizacao: HappyHouse
+# Versao: 1.0.1
+# Data: 2026-11-23
+# Requisitos: Apache, mod_rewrite e AllowOverride FileInfo/Options
+# ============================================================================
 
+# HappyTech - Encurtador de URLs
+# Instalacao: /go/.htaccess
+# Requer Apache com mod_rewrite e AllowOverride FileInfo
+Options -MultiViews
+RewriteEngine On
+
+# Mappy - campanha Happy Friday
+RewriteRule ^mappy/?$ https://happytech.com.br/apps/happyhouse/external/products/mappy/ [R=302,L,NE,NC]
+
+# Bloquear listagem e caminhos nao cadastrados
+Options -Indexes
